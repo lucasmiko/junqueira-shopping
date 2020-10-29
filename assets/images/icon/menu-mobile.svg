@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="15" viewBox="0 0 40 15">
+  <g id="menu" transform="translate(0 -96)">
+    <g id="Grupo_2" data-name="Grupo 2" transform="translate(0 96)">
+      <g id="Grupo_1" data-name="Grupo 1">
+        <path id="Caminho_1" data-name="Caminho 1" d="M39.167,96H.833c-.46,0-.833.224-.833.5s.373.5.833.5H39.167c.46,0,.833-.224.833-.5S39.627,96,39.167,96Z" transform="translate(0 -96)" fill="#25212c"/>
+      </g>
+    </g>
+    <g id="Grupo_4" data-name="Grupo 4" transform="translate(0 103)">
+      <g id="Grupo_3" data-name="Grupo 3">
+        <path id="Caminho_2" data-name="Caminho 2" d="M39.167,245.333H.833c-.46,0-.833.224-.833.5s.373.5.833.5H39.167c.46,0,.833-.224.833-.5S39.627,245.333,39.167,245.333Z" transform="translate(0 -245.333)" fill="#25212c"/>
+      </g>
+    </g>
+    <g id="Grupo_6" data-name="Grupo 6" transform="translate(0 110)">
+      <g id="Grupo_5" data-name="Grupo 5">
+        <path id="Caminho_3" data-name="Caminho 3" d="M39.167,394.667H.833c-.46,0-.833.224-.833.5s.373.5.833.5H39.167c.46,0,.833-.224.833-.5S39.627,394.667,39.167,394.667Z" transform="translate(0 -394.667)" fill="#25212c"/>
+      </g>
+    </g>
+  </g>
+</svg>

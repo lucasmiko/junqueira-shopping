@@ -1,0 +1,91 @@
+#header {
+    width: 100%;
+    height: 55px;
+    position: relative;
+    justify-content: space-between;
+    .menu {
+        .btn-open {
+            width: 40px;
+            padding: 0;
+            background-color: transparent;
+            border: none;
+            margin-left: var(--space-mobile);
+            svg {
+                width: 40px;
+                height: 15px;
+                margin: auto 0;
+            }
+        }
+        .btn-close {
+            display: none;
+        }
+        nav {
+            display: none;
+        }
+        .logo {
+            display: none;
+        }
+        h1 {
+            position: absolute;
+            right: var(--space-mobile);
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--main);
+        }
+
+    }    
+    .open {
+        width: 100%;  
+        height: 100vh;
+        background-color: var(--main);
+        flex-direction: column;            
+        .btn-open {
+            display: none;
+        }
+        .btn-close {
+            display: flex;
+            position: absolute;
+            width: 40px;
+            padding: 0;
+            background-color: transparent;
+            border: none;
+            top: var(--space-mobile);
+            left: var(--space-mobile);
+            svg {
+                width: 40px;
+                height: 15px;
+                margin: auto 0;
+            }
+        }
+        nav {
+            margin-top: 100px;
+            ul {
+                flex-direction: column;
+                margin: 0 auto;
+                padding: 0;
+                li {
+                    a {
+                        text-decoration: none;
+                        margin: 0 auto;
+                        font-size: 20px;
+                        font-weight: 700;
+                        color: var(--gray);
+                        padding: var(--space-mobile) 0;
+                    }
+                }
+            }
+        }
+        h1 {
+            position: absolute;
+            right: var(--space-mobile);
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--gray);
+        }
+        .logo {
+            position: absolute;
+            margin-top: calc(100vh - 140px);
+            margin-left: calc(50% - 60px);
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "name": "App",
+    "icons": [
+     {
+      "src": "\/assets\/images\/favicon\/favicon-16x16.png",
+      "sizes": "36x36",
+      "type": "image\/png",
+      "density": "0.75"
+     },
+     {
+      "src": "\/assets\/images\/favicon\/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image\/png",
+      "density": "1.0"
+     },
+     {
+      "src": "\/assets\/images\/favicon\/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image\/png",
+      "density": "4.0"
+     },
+     {
+        "src": "\/assets\/images\/favicon\/android-chrome-512x512.png",
+        "sizes": "512x512",
+        "type": "image\/png",
+        "density": "4.0"
+       }
+    ]
+   }

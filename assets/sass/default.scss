@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+body, div, footer, header, main, nav, section, ul, ol, li, button, form {
+    display: flex;
+}
+
+body {
+    margin: 0;
+    flex-direction: column;
+    background-color: var(--white);
+    > main {
+        min-height: calc(100vh - 400px);
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        > main {
+            min-height: calc(100vh - 341px);
+        }
+    }
+}

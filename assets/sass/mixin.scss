@@ -1,0 +1,21 @@
+@mixin button {
+    width: 220px;
+    min-width: 200px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: var(--gray);
+    font-size: 30px;
+    font-weight: 700;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    &:hover {
+        background-color: var(--white);
+    }
+}
+
+
