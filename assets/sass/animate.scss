@@ -1,0 +1,18 @@
+@keyframes menu {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+//as propriedades animation-delay foram aicadas a cala elemento separadamente
+
+.animate-menu {
+    animation-name: menu;
+    animation-duration: .6s;
+    animation-fill-mode: backwards;
+}
