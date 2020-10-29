@@ -79,6 +79,7 @@ body > main {
   width: 100%;
   height: 55px;
   position: relative;
+  z-index: 2;
 }
 #header .menu .btn-open {
   width: 40px;
@@ -199,6 +200,12 @@ body > main {
     height: 35px;
     margin: auto 0;
   }
+  #header .open nav {
+    margin-top: 165px;
+  }
+  #header .open nav ul li a {
+    font-size: 30px;
+  }
   #header .open h1 {
     width: 100vw;
     font-size: 30px;
@@ -207,6 +214,217 @@ body > main {
     top: 48px;
     display: inline;
     text-align: center;
+  }
+}
+#home {
+  flex-direction: column;
+}
+#home .full-banner-home {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/photos/full-banner-home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 48%;
+  margin-top: -55px;
+  position: relative;
+}
+#home .full-banner-home .help {
+  width: calc(100% - calc(2 * var(--space-mobile)));
+  margin: 0 var(--space-mobile);
+  max-width: 1000px;
+  position: absolute;
+  bottom: 30%;
+  border-bottom: solid 2px var(--main);
+  justify-content: center;
+  align-items: center;
+}
+#home .full-banner-home .help img {
+  width: 50px;
+  height: 50px;
+  margin-right: var(--space-mobile);
+}
+#home .full-banner-home .help input {
+  background: transparent;
+  border: none;
+  width: 225px;
+  padding: var(--space-mobile) 0;
+  cursor: pointer;
+}
+#home .full-banner-home .help input::-webkit-input-placeholder {
+  font-size: 17px;
+  color: var(--main);
+}
+#home .full-banner-home .help input:focus {
+  background: transparent;
+  border: transparent;
+}
+#home .full-banner-home .help input + img {
+  height: 30px;
+  width: 20px;
+  margin-left: var(--space-mobile);
+  margin-right: 0;
+}
+#home .stores {
+  width: 100%;
+  height: 100vh;
+}
+#home .stores > div {
+  width: calc(100% / 3);
+  height: 100vh;
+  position: relative;
+  flex-direction: row;
+}
+#home .stores > div a {
+  width: 100%;
+  text-decoration: none;
+  position: absolute;
+  transform: rotate(270deg);
+  margin: 0;
+  bottom: 50%;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--main);
+}
+#home .stores > div img {
+  width: 125px;
+  position: absolute;
+  bottom: var(--space-desktop);
+}
+#home .stores > div img.hover {
+  display: none;
+}
+#home .stores > div.odd {
+  background-color: var(--gray);
+  display: none;
+}
+#home .stores > div.food:hover, #home .stores > div.food:focus {
+  background-color: rgba(248, 207, 38, 0.3);
+  transition: all 0.4s ease-in-out;
+}
+#home .stores > div.food:hover a, #home .stores > div.food:focus a {
+  color: #f8cf26;
+}
+#home .stores > div.food:hover img, #home .stores > div.food:focus img {
+  display: none;
+}
+#home .stores > div.food:hover img.hover, #home .stores > div.food:focus img.hover {
+  display: flex;
+  animation-delay: 0.2s;
+}
+#home .stores > div.dress:hover, #home .stores > div.dress:focus {
+  background-color: rgba(236, 135, 192, 0.3);
+  transition: all 0.4s ease-in-out;
+}
+#home .stores > div.dress:hover a, #home .stores > div.dress:focus a {
+  color: #ec87c0;
+}
+#home .stores > div.dress:hover img, #home .stores > div.dress:focus img {
+  display: none;
+}
+#home .stores > div.dress:hover img.hover, #home .stores > div.dress:focus img.hover {
+  display: flex;
+  animation-delay: 0.2s;
+}
+#home .stores > div.game:hover, #home .stores > div.game:focus {
+  background-color: rgba(69, 77, 88, 0.3);
+  transition: all 0.4s ease-in-out;
+}
+#home .stores > div.game:hover a, #home .stores > div.game:focus a {
+  color: #454d58;
+}
+#home .stores > div.game:hover img, #home .stores > div.game:focus img {
+  display: none;
+}
+#home .stores > div.game:hover img.hover, #home .stores > div.game:focus img.hover {
+  display: flex;
+  animation-delay: 0.2s;
+}
+
+@media (min-width: 992px) {
+  #home .full-banner-home {
+    margin-top: -135px;
+    justify-content: center;
+  }
+  #home .full-banner-home .help {
+    width: 600px;
+  }
+  #home .full-banner-home .help img {
+    width: 100px;
+    height: 100px;
+    padding-bottom: 10px;
+  }
+  #home .full-banner-home .help input {
+    width: 600px;
+  }
+  #home .full-banner-home .help input::-webkit-input-placeholder {
+    font-size: 30px;
+  }
+  #home .full-banner-home .help input + img {
+    height: 70px;
+    width: 40px;
+  }
+}
+@media (min-width: 1500px) {
+  #home .full-banner-home .help {
+    bottom: 20%;
+  }
+  #home .stores > div {
+    width: calc(100% / 6);
+  }
+  #home .stores > div a {
+    bottom: initial;
+    top: 17%;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  #home .stores > div img {
+    width: 280px;
+  }
+  #home .stores > div.odd {
+    display: flex;
+  }
+  #home .stores > div.tv:hover, #home .stores > div.tv:focus {
+    background-color: rgba(7, 72, 94, 0.3);
+    transition: all 0.4s ease-in-out;
+  }
+  #home .stores > div.tv:hover a, #home .stores > div.tv:focus a {
+    color: #07485e;
+  }
+  #home .stores > div.tv:hover img, #home .stores > div.tv:focus img {
+    display: none;
+  }
+  #home .stores > div.tv:hover img.hover, #home .stores > div.tv:focus img.hover {
+    display: flex;
+    animation-delay: 0.2s;
+  }
+  #home .stores > div.jewels:hover, #home .stores > div.jewels:focus {
+    background-color: rgba(41, 128, 186, 0.3);
+    transition: all 0.4s ease-in-out;
+  }
+  #home .stores > div.jewels:hover a, #home .stores > div.jewels:focus a {
+    color: #2980ba;
+  }
+  #home .stores > div.jewels:hover img, #home .stores > div.jewels:focus img {
+    display: none;
+  }
+  #home .stores > div.jewels:hover img.hover, #home .stores > div.jewels:focus img.hover {
+    display: flex;
+    animation-delay: 0.2s;
+  }
+  #home .stores > div.shoes:hover, #home .stores > div.shoes:focus {
+    background-color: rgba(172, 146, 236, 0.3);
+    transition: all 0.4s ease-in-out;
+  }
+  #home .stores > div.shoes:hover a, #home .stores > div.shoes:focus a {
+    color: #ac92ec;
+  }
+  #home .stores > div.shoes:hover img, #home .stores > div.shoes:focus img {
+    display: none;
+  }
+  #home .stores > div.shoes:hover img.hover, #home .stores > div.shoes:focus img.hover {
+    display: flex;
+    animation-delay: 0.2s;
   }
 }
 

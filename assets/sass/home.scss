@@ -1,0 +1,240 @@
+#home {
+    flex-direction: column;
+    .full-banner-home {
+        width: 100%;
+        height: 100vh;
+        background-image: url('../images/photos/full-banner-home.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: 48%;
+        margin-top: -55px;
+        position: relative;
+        .help {
+            width: calc(100% - calc(2 * var(--space-mobile)));
+            margin: 0 var(--space-mobile);
+            max-width: 1000px;
+            position: absolute;
+            bottom: 30%;
+            border-bottom: solid 2px var(--main);
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 50px;
+                height: 50px;
+                margin-right: var(--space-mobile);
+            }
+            input {
+                background: transparent;
+                border: none;
+                width: 225px;
+                padding: var(--space-mobile) 0;
+                cursor: pointer;
+                &::-webkit-input-placeholder {
+                    font-size: 17px;
+                    color: var(--main);
+                }
+                &:focus {
+                    background: transparent;
+                    border: transparent;
+                }
+            }
+            input + img {
+                height: 30px;
+                width: 20px;
+                margin-left: var(--space-mobile);
+                margin-right: 0;
+            }
+        }
+    }
+    .stores {
+        width: 100%;
+        height: 100vh;
+        > div {
+            width: calc(100% / 3);
+            height: 100vh;
+            position: relative;
+            flex-direction: row;
+            a {
+                width: 100%;
+                text-decoration: none;
+                position: absolute;
+                transform: rotate(270deg);
+                margin: 0;
+                bottom: 50%;
+                font-size: 20px;
+                font-weight: 500;
+                color: var(--main);
+            }
+            img {
+                width: 125px;
+                position: absolute;
+                bottom: var(--space-desktop);
+                &.hover {
+                    display: none;
+                }
+            }
+            &.odd {
+                background-color: var(--gray);
+                display: none;
+            }
+            &.food {
+                &:hover,
+                &:focus {
+                    background-color: rgb(248, 207, 38, 0.3);
+                    transition: all 0.4s ease-in-out;
+                    a {
+                        color: rgb(248, 207, 38);
+                    }
+                    img {
+                        display: none;
+                        &.hover {
+                            display: flex;
+                            animation-delay: .2s;
+                        }
+                    }
+                }
+            }
+            &.dress {
+                &:hover,
+                &:focus {
+                    background-color: rgb(236, 135, 192, 0.3);
+                    transition: all 0.4s ease-in-out;
+                    a {
+                        color: rgb(236, 135, 192);
+                    }
+                    img {
+                        display: none;
+                        &.hover {
+                            display: flex;
+                            animation-delay: .2s;
+                        }
+                    }
+                }
+            }
+            &.game {
+                &:hover,
+                &:focus {
+                    background-color: rgb(69, 77, 88, 0.3);
+                    transition: all 0.4s ease-in-out;
+                    a {
+                        color: rgb(69, 77, 88);
+                    }
+                    img {
+                        display: none;
+                        &.hover {
+                            display: flex;
+                            animation-delay: .2s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (min-width: 992px) {
+    #home {
+        .full-banner-home {
+            margin-top: -135px;
+            justify-content: center;
+            .help {
+                width: 600px;
+                img {
+                    width: 100px;
+                    height: 100px;
+                    padding-bottom: 10px;
+                }
+                input {
+                    width: 600px;
+                    &::-webkit-input-placeholder {
+                        font-size: 30px;
+                    }
+                }
+                input + img {
+                    height: 70px;
+                    width: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1500px) {
+    #home {
+        .full-banner-home {
+            .help {
+                bottom: 20%;
+            }
+        }
+        .stores {
+            > div {
+                width: calc(100% / 6);
+                a {
+                    bottom: initial;
+                    top: 17%;
+                    font-size: 30px;
+                    font-weight: 700;
+                }
+                img {
+                    width: 280px;
+                }
+                &.odd {
+                    display: flex;
+                }
+                &.tv {
+                    &:hover,
+                    &:focus {
+                        background-color: rgb(7, 72,94, 0.3);
+                        transition: all 0.4s ease-in-out;
+                        a {
+                            color: rgb(7, 72, 94);
+                        }
+                        img {
+                            display: none;
+                            &.hover {
+                                display: flex;
+                                animation-delay: .2s;
+                            }
+                        }
+                    }
+                }
+                &.jewels {
+                    &:hover,
+                    &:focus {
+                        background-color: rgb(41, 128,186, 0.3);
+                        transition: all 0.4s ease-in-out;
+                        a {
+                            color: rgb(41, 128, 186);
+                        }
+                        img {
+                            display: none;
+                            &.hover {
+                                display: flex;
+                                animation-delay: .2s;
+                            }
+                        }
+                    }
+                }
+                &.shoes {
+                    &:hover,
+                    &:focus {
+                        background-color: rgb(172, 146,236, 0.3);
+                        transition: all 0.4s ease-in-out;
+                        a {
+                            color: rgb(172, 146, 236);
+                        }
+                        img {
+                            display: none;
+                            &.hover {
+                                display: flex;
+                                animation-delay: .2s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
