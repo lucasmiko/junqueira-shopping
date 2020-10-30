@@ -260,6 +260,7 @@
             }
         }
         .services {
+            margin-bottom: var(--space-mobile);
             .services-cards {
                 max-width: 1300px;
                 margin: 0 auto;
@@ -281,25 +282,10 @@
     }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 992px) {
     #home {
-        .full-banner-home {
-            .help {
-                bottom: 20%;
-            }
-        }
         .stores {
             > div {
-                width: calc(100% / 6);
-                a {
-                    bottom: initial;
-                    top: 17%;
-                    font-size: 30px;
-                    font-weight: 700;
-                }
-                img {
-                    width: 250px;
-                }
                 &.odd {
                     display: flex;
                 }
@@ -353,6 +339,30 @@
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    #home {
+        .full-banner-home {
+            .help {
+                bottom: 20%;
+            }
+        }
+        .stores {
+            > div {
+                width: calc(100% / 6);
+                a {
+                    bottom: initial;
+                    top: 17%;
+                    font-size: 20px;
+                    font-weight: 700;
+                }
+                img {
+                    width: 250px;
                 }
             }
         }
