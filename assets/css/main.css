@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -341,6 +342,74 @@ body > main {
   display: flex;
   animation-delay: 0.2s;
 }
+#home .movie {
+  background-image: url("../images/photos/Grupo de máscara 3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: -45em;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+#home .movie .movie-bg {
+  background-color: rgba(230, 20, 20, 0.5);
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+}
+#home .movie .movie-bg h2 {
+  margin: 0 auto;
+  margin-top: 175px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--gray);
+}
+#home .movie .movie-bg .movie-of-week {
+  flex-direction: column;
+  width: 100%;
+}
+#home .movie .movie-bg .movie-of-week .movie-cover {
+  width: 100%;
+}
+#home .movie .movie-bg .movie-of-week .movie-cover img {
+  height: 350px;
+  margin: 0 auto;
+  margin-top: var(--space-mobile);
+}
+#home .movie .movie-bg .movie-title {
+  flex-direction: column;
+}
+#home .movie .movie-bg .movie-title p {
+  margin: var(--space-mobile) auto;
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--gray);
+}
+#home .movie .movie-bg .movie-title button {
+  width: 220px;
+  min-width: 200px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: var(--gray);
+  font-size: 30px;
+  font-weight: 700;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  width: 200px;
+  height: 60px;
+  margin-left: calc(50% - 100px);
+  font-size: 20px;
+}
+#home .movie .movie-bg .movie-title button:hover {
+  background-color: var(--white);
+}
 
 @media (min-width: 992px) {
   #home .full-banner-home {
@@ -426,6 +495,60 @@ body > main {
   #home .stores > div.shoes:hover img.hover, #home .stores > div.shoes:focus img.hover {
     display: flex;
     animation-delay: 0.2s;
+  }
+  #home .movie {
+    background-position-x: center;
+  }
+  #home .movie .movie-bg {
+    justify-content: center;
+  }
+  #home .movie .movie-bg h2 {
+    font-size: 30px;
+  }
+  #home .movie .movie-bg .movie-of-week {
+    flex-direction: row;
+    margin: auto;
+    width: 1140px;
+  }
+  #home .movie .movie-bg .movie-of-week .movie-cover {
+    width: initial;
+  }
+  #home .movie .movie-bg .movie-of-week .movie-cover img {
+    height: 450px;
+    margin: 0 var(--space-desktop);
+    margin-top: var(--space-desktop);
+  }
+  #home .movie .movie-bg .movie-of-week .movie-title {
+    width: initial;
+    margin: auto 0;
+  }
+  #home .movie .movie-bg .movie-of-week .movie-title p {
+    font-size: 100px;
+  }
+  #home .movie .movie-bg .movie-of-week .movie-title button {
+    width: 220px;
+    min-width: 200px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: var(--gray);
+    font-size: 30px;
+    font-weight: 700;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    width: initial;
+    height: 100px;
+    margin-left: initial;
+    font-size: initial;
+    max-width: 420px;
+    font-size: 40px;
+  }
+  #home .movie .movie-bg .movie-of-week .movie-title button:hover {
+    background-color: var(--white);
   }
 }
 

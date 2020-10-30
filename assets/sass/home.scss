@@ -130,6 +130,58 @@
             }
         }
     }
+    .movie {
+        background-image: url('../images/photos/Grupo\ de\ máscara\ 3.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: -45em;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        .movie-bg {
+            background-color: rgb(230, 20, 20, 0.5);
+            width: 100%;
+            height: 100vh;
+            flex-direction: column;
+            h2 {
+                margin: 0 auto;
+                margin-top: 175px;
+                font-size: 20px;
+                font-weight: 700;
+                color: var(--gray);
+            }
+            .movie-of-week {
+                flex-direction: column;
+                width: 100%;
+                .movie-cover {
+                    width: 100%;
+                    img {
+                        height: 350px;
+                        margin: 0 auto;
+                        margin-top: var(--space-mobile);
+                    }
+                }
+            }
+            .movie-title {
+                flex-direction: column;
+                p {
+                    margin: var(--space-mobile) auto;
+                    font-size: 30px;
+                    font-weight: 700;
+                    color: var(--gray);
+                }
+                button {
+                    @include button;
+                    width: 200px;
+                    height: 60px;
+                    margin-left: calc(50% - 100px);
+                    font-size: 20px;
+                }
+            }
+        }
+    }
 }
 
 
@@ -231,6 +283,44 @@
                                 display: flex;
                                 animation-delay: .2s;
                             }
+                        }
+                    }
+                }
+            }
+        }
+        .movie {
+            background-position-x: center;
+            .movie-bg {
+                justify-content: center;
+                h2 {
+                    font-size: 30px;
+                }
+                .movie-of-week {
+                    flex-direction: row;
+                    margin: auto;
+                    width: 1140px;
+                    .movie-cover {
+                        width: initial;
+                        img {
+                            height: 450px;
+                            margin: 0 var(--space-desktop);
+                            margin-top: var(--space-desktop);
+                        }
+                    }
+                    .movie-title {
+                        width: initial;
+                        margin: auto 0;
+                        p {
+                            font-size: 100px;
+                        }
+                        button {
+                            @include button;
+                            width: initial;
+                            height: 100px;
+                            margin-left: initial;
+                            font-size: initial;
+                            max-width: 420px;
+                            font-size: 40px;
                         }
                     }
                 }
