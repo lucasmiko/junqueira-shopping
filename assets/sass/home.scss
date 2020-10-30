@@ -185,6 +185,7 @@
     .services {
         width: 100%;
         flex-direction: column;
+        margin-bottom: var(--space-mobile);
         .services-title {
             width: 100%;
             display: inline;
@@ -239,6 +240,7 @@
         .full-banner-home {
             margin-top: -135px;
             justify-content: center;
+            background-image: url('../images/photos/full-banner-home-2x.jpg');
             .help {
                 width: 600px;
                 img {
@@ -257,6 +259,9 @@
                     width: 40px;
                 }
             }
+        }
+        .movie {
+            background-image: url('../images/photos/Grupo\ de\ máscara\ 3@2x.jpg');
         }
         .services {
             height: 100vh;

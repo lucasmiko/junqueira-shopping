@@ -489,6 +489,7 @@ body > main {
 #home .services {
   width: 100%;
   flex-direction: column;
+  margin-bottom: var(--space-mobile);
 }
 #home .services .services-title {
   width: 100%;
@@ -539,6 +540,7 @@ body > main {
   #home .full-banner-home {
     margin-top: -135px;
     justify-content: center;
+    background-image: url("../images/photos/full-banner-home-2x.jpg");
   }
   #home .full-banner-home .help {
     width: 600px;
@@ -557,6 +559,9 @@ body > main {
   #home .full-banner-home .help input + img {
     height: 70px;
     width: 40px;
+  }
+  #home .movie {
+    background-image: url("../images/photos/Grupo de máscara 3@2x.jpg");
   }
   #home .services {
     height: 100vh;
