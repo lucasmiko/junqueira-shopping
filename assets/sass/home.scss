@@ -147,7 +147,7 @@
             flex-direction: column;
             h2 {
                 margin: 0 auto;
-                margin-top: 175px;
+                margin-top: var(--space-mobile);
                 font-size: 20px;
                 font-weight: 700;
                 color: var(--gray);
@@ -189,7 +189,7 @@
         .services-title {
             width: 100%;
             display: inline;
-            margin-top: 75px;
+            margin-top: var(--space-mobile);
             h3 {
                 text-align: center;
                 font-size: 20px;
