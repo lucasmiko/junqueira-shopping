@@ -488,7 +488,6 @@ body > main {
 }
 #home .services {
   width: 100%;
-  height: 100vh;
   flex-direction: column;
 }
 #home .services .services-title {
@@ -560,7 +559,8 @@ body > main {
     width: 40px;
   }
   #home .services {
-    margin-bottom: var(--space-mobile);
+    height: 100vh;
+    margin-bottom: var(--space-desktop);
   }
   #home .services .services-cards {
     max-width: 1300px;
@@ -639,7 +639,7 @@ body > main {
     font-weight: 700;
   }
   #home .stores > div img {
-    width: 250px;
+    width: 200px;
   }
   #home .movie {
     background-position-x: center;
@@ -695,6 +695,11 @@ body > main {
   }
   #home .movie .movie-bg .movie-of-week .movie-title button:hover {
     background-color: var(--white);
+  }
+}
+@media (min-width: 1500px) {
+  #home .stores > div img {
+    width: 240px;
   }
 }
 
