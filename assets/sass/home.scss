@@ -7,7 +7,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position-x: 48%;
-        /*margin-top: -55px;*/
+        margin-top: -55px;
         position: relative;
         .help {
             width: calc(100% - calc(2 * var(--space-mobile)));
@@ -182,6 +182,55 @@
             }
         }
     }
+    .services {
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        .services-title {
+            width: 100%;
+            display: inline;
+            margin-top: 75px;
+            h3 {
+                text-align: center;
+                font-size: 20px;
+                font-weight: 700;
+                color: var(--main);
+            }
+        }
+        .services-cards {
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: center;
+            a {
+                text-decoration: none;
+                padding: 0 10px;
+                > div {
+                    width: 162px;
+                    height: 162px;
+                    margin: auto;
+                    background-color: var(--gray);
+                    margin-top: var(--space-mobile);
+                    border: 1px solid var(--main);
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    &:hover {
+                        background-color: rgb(64, 55, 78, 0.5);
+                    }
+                    img {
+                        width: 80px;
+                        height: 80px;
+                        margin: var(--space-mobile) 0;
+                    }
+                    p {
+                        margin: 0 auto;
+                        font-size: 13px;
+                        color: var(--main);
+                    }
+                }
+            }
+        }
+    }
 }
 
 
@@ -189,7 +238,7 @@
 @media (min-width: 992px) {
     #home {
         .full-banner-home {
-            /*margin-top: -135px;*/
+            margin-top: -135px;
             justify-content: center;
             .help {
                 width: 600px;
@@ -207,6 +256,25 @@
                 input + img {
                     height: 70px;
                     width: 40px;
+                }
+            }
+        }
+        .services {
+            .services-cards {
+                max-width: 1300px;
+                margin: 0 auto;
+                a {
+                    > div {
+                        width: 302px;
+                        height: 302px;
+                        img {
+                            width: 150px;
+                            height: 150px;
+                        }
+                        p {
+                            font-size: 20px;
+                        }
+                    }
                 }
             }
         }
@@ -298,6 +366,7 @@
                 .movie-of-week {
                     flex-direction: row;
                     margin: auto;
+                    margin-bottom: var(--space-desktop);
                     width: 1140px;
                     .movie-cover {
                         width: initial;
