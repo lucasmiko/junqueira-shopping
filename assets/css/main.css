@@ -437,7 +437,7 @@ body > main {
 }
 #home .movie .movie-bg h2 {
   margin: 0 auto;
-  margin-top: 175px;
+  margin-top: var(--space-mobile);
   font-size: 20px;
   font-weight: 700;
   color: var(--gray);
@@ -494,7 +494,7 @@ body > main {
 #home .services .services-title {
   width: 100%;
   display: inline;
-  margin-top: 75px;
+  margin-top: var(--space-mobile);
 }
 #home .services .services-title h3 {
   text-align: center;
@@ -589,7 +589,7 @@ body > main {
     font-weight: 700;
   }
   #home .stores > div img {
-    width: 280px;
+    width: 250px;
   }
   #home .stores > div.odd {
     display: flex;
