@@ -352,6 +352,7 @@ body > main {
   height: 100vh;
   position: relative;
   flex-direction: row;
+  cursor: pointer;
 }
 #home .stores > div a {
   width: 100%;
@@ -706,6 +707,49 @@ body > main {
   #home .stores > div img {
     width: 240px;
   }
+}
+#terms,
+#politic {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  flex-direction: column;
+  padding: var(--space-mobile);
+}
+#terms h2, #terms h3,
+#politic h2,
+#politic h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--main-second);
+}
+#terms p,
+#politic p {
+  font-size: 15px;
+  color: var(--main);
+  line-height: 26px;
+}
+#terms a,
+#politic a {
+  text-decoration: none;
+  color: var(--main-second);
+  cursor: pointer;
+}
+#terms a:hover,
+#politic a:hover {
+  color: var(--main);
+}
+#terms ol, #terms ul,
+#politic ol,
+#politic ul {
+  flex-direction: column;
+}
+#terms ol li, #terms ul li,
+#politic ol li,
+#politic ul li {
+  line-height: 26px;
+  font-size: 15px;
+  color: var(--main);
 }
 
 /*# sourceMappingURL=main.css.map */
