@@ -84,6 +84,9 @@ body > main {
   height: 55px;
   z-index: 2;
 }
+#header.park-menu .menu h1 {
+  color: var(--gray);
+}
 #header .menu .btn-open {
   width: 40px;
   padding: 0;
@@ -720,7 +723,7 @@ body > main {
 }
 #contact .contact-box {
   width: 90vw;
-  max-width: 500px;
+  max-width: 360px;
   max-height: 60vh;
   margin: 0 auto;
   margin-top: 35vh;
@@ -742,12 +745,105 @@ body > main {
   padding-left: var(--space-mobile);
   margin-bottom: var(--space-mobile);
 }
+#contact .contact-box form label {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: var(--gray);
+}
+#contact .contact-box form input, #contact .contact-box form textarea {
+  background: none;
+  width: 200px;
+  border: none;
+  border-bottom: solid 2px var(--gray);
+}
+#contact .contact-box form button {
+  width: 220px;
+  min-width: 200px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: var(--gray);
+  font-size: 30px;
+  font-weight: 700;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  width: 120px;
+  height: 40px;
+  background-color: var(--main-second);
+  border: solid 2px var(--gray);
+  color: var(--gray);
+  margin-top: 10px;
+  font-size: 20px;
+}
+#contact .contact-box form button:hover {
+  background-color: var(--white);
+}
 #contact .contact-box p {
   margin: 0;
   text-align: right;
   padding-bottom: var(--space-mobile);
   padding-right: var(--space-mobile);
   font-size: 15px;
+}
+
+@media (min-width: 768px) {
+  #contact {
+    background-position-x: initial;
+  }
+  #contact .contact-box {
+    margin-left: var(--space-desktop);
+  }
+}
+@media (min-width: 992) {
+  #contact {
+    margin-top: -135px;
+  }
+}
+@media (min-width: 1500px) {
+  #contact .contact-box {
+    margin-left: calc(var(--space-desktop) + 80px);
+    max-width: 500px;
+  }
+}
+#park {
+  background-image: url("../images/photos/park-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+  margin-top: -55px;
+  position: relative;
+}
+#park h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--gray);
+  margin: 0;
+  position: absolute;
+  bottom: var(--space-mobile);
+  padding-left: var(--space-mobile);
+}
+#park h1 span {
+  color: #21C25E;
+  font-weight: 700;
+}
+
+.park-mobile {
+  width: 100%;
+  flex-direction: column;
+  background-color: rgba(64, 55, 78, 0.5);
+}
+.park-mobile img {
+  margin: auto;
+  padding: var(--space-mobile);
+}
+.park-mobile a {
+  margin: auto;
 }
 
 #terms,

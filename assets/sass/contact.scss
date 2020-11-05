@@ -9,7 +9,7 @@
     position: relative;
     .contact-box {
         width: 90vw;
-        max-width: 500px;
+        max-width: 360px;
         max-height: 60vh;
         margin: 0 auto;
         margin-top: 35vh;
@@ -29,6 +29,29 @@
             align-items: flex-start;
             padding-left: var(--space-mobile);
             margin-bottom: var(--space-mobile);
+            label {
+                font-family: 'Montserrat', sans-serif;
+                font-style: normal;
+                font-weight: 700;
+                color: var(--gray);
+            }
+
+            input, textarea {
+                background: none;
+                width: 200px;
+                border: none;
+                border-bottom: solid 2px var(--gray);
+            }
+            button {
+                @include button;
+                width: 120px;
+                height: 40px;
+                background-color: var(--main-second);
+                border: solid 2px var(--gray);
+                color: var(--gray);
+                margin-top: 10px;
+                font-size: 20px;
+            }
         }
         p {
             margin: 0;
@@ -36,6 +59,30 @@
             padding-bottom: var(--space-mobile);
             padding-right: var(--space-mobile);
             font-size: 15px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    #contact {
+        background-position-x: initial;
+        .contact-box {
+            margin-left: var(--space-desktop);
+        }
+    }
+}
+
+@media (min-width: 992) {
+    #contact {
+        margin-top: -135px;
+    }
+}
+
+@media (min-width: 1500px) {
+    #contact {
+        .contact-box {
+            margin-left: calc(var(--space-desktop) + 80px);
+            max-width: 500px;
         }
     }
 }
