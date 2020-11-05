@@ -84,6 +84,12 @@ body > main {
   height: 55px;
   z-index: 2;
 }
+#header.park-menu .menu .btn-open svg.menu-black {
+  display: none;
+}
+#header.park-menu .menu .btn-open svg.menu-white {
+  display: flex;
+}
 #header.park-menu .menu h1 {
   color: var(--gray);
 }
@@ -93,6 +99,9 @@ body > main {
   background-color: transparent;
   border: none;
   margin-left: var(--space-mobile);
+}
+#header .menu .btn-open.menu-white {
+  display: none;
 }
 #header .menu .btn-open svg {
   width: 40px;
@@ -173,6 +182,17 @@ body > main {
   margin-left: calc(50% - 60px);
 }
 
+@media (min-width: 768px) {
+  #header.park-menu .menu .btn-open svg.menu-black {
+    display: flex;
+  }
+  #header.park-menu .menu .btn-open svg.menu-white {
+    display: none;
+  }
+  #header.park-menu .menu h1 {
+    color: var(--main);
+  }
+}
 @media (min-width: 992px) {
   #header {
     height: 135px;
@@ -799,7 +819,7 @@ body > main {
     margin-left: var(--space-desktop);
   }
 }
-@media (min-width: 992) {
+@media (min-width: 992px) {
   #contact {
     margin-top: -135px;
   }
@@ -832,6 +852,9 @@ body > main {
   color: #21C25E;
   font-weight: 700;
 }
+#park .park-desktop {
+  display: none;
+}
 
 .park-mobile {
   width: 100%;
@@ -846,6 +869,65 @@ body > main {
   margin: auto;
 }
 
+@media (min-width: 768px) {
+  #park {
+    background-image: url("../images/photos/park-desktop.jpg");
+    background-position-x: -15em;
+    position: relative;
+  }
+  #park > div {
+    position: absolute;
+    bottom: var(--space-mobile);
+    right: var(--space-mobile);
+  }
+  #park > div .park-desktop {
+    display: flex;
+  }
+  #park > div .phone-park {
+    height: 100px;
+    width: 75px;
+    margin: auto 0;
+  }
+  #park > div .direction-park {
+    width: 150px;
+    height: 100px;
+    margin: auto 0;
+    transform: rotate(270deg);
+  }
+  #park > div a img {
+    width: 150px;
+    height: 150px;
+    margin: auto 0;
+  }
+
+  .park-mobile {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  #park {
+    margin-top: -135px;
+    background-image: url("../images/photos/park-desktop-2x.jpg");
+    background-position-x: initial;
+  }
+  #park > div a img {
+    width: 100px;
+    height: 100px;
+    margin: auto 0;
+  }
+  #park h1 {
+    color: var(--main-second);
+    font-size: 40px;
+  }
+  #park h1 br.br-one {
+    display: none;
+  }
+}
+@media (min-width: 1500px) {
+  #park h1 {
+    font-size: 60px;
+  }
+}
 #terms,
 #politic {
   width: 100%;

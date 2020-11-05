@@ -19,6 +19,9 @@
             font-weight: 700;
         }
     }
+    .park-desktop {
+        display: none;
+    }
 }
 
 .park-mobile {
@@ -31,5 +34,77 @@
     }
     a {
         margin: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    #park {
+        background-image: url('../images/photos/park-desktop.jpg');
+        background-position-x: -15em;
+        position: relative;
+        > div {
+            position: absolute;
+            bottom: var(--space-mobile);
+            right: var(--space-mobile);
+            .park-desktop {
+                display: flex;
+            }
+            .phone-park {
+                height: 100px;
+                width: 75px;
+                margin: auto 0;
+            }
+            .direction-park {
+                width: 150px;
+                height: 100px;
+                margin: auto 0;
+                transform: rotate(270deg);
+            }
+            a {
+                img {
+                    width: 150px;
+                    height: 150px;
+                    margin: auto 0;
+                }
+            }
+        }
+    }
+    .park-mobile {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    #park {
+        margin-top: -135px;
+        background-image: url('../images/photos/park-desktop-2x.jpg');
+        background-position-x: initial;
+        > div {
+            a {
+                img {
+                    width: 100px;
+                    height: 100px;
+                    margin: auto 0;
+                }                
+            }
+        }
+        h1 {
+            color: var(--main-second);
+            font-size: 40px;
+            br {
+                &.br-one {
+                    display: none;
+                }
+            }
+        }
+        
+    }
+}
+
+@media (min-width: 1500px) {
+    #park {
+        h1 {
+            font-size: 60px;
+        }
     }
 }

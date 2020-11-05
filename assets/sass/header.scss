@@ -4,6 +4,16 @@
     z-index: 2;
     &.park-menu {
         .menu {
+            .btn-open {
+                svg {
+                    &.menu-black {
+                        display: none;
+                    }
+                    &.menu-white {
+                        display: flex;
+                    }
+                }
+            }
             h1 {
                 color: var(--gray);
             }
@@ -16,6 +26,9 @@
             background-color: transparent;
             border: none;
             margin-left: var(--space-mobile);
+            &.menu-white {
+                display: none;
+            }
             svg {
                 width: 40px;
                 height: 15px;
@@ -98,6 +111,28 @@
             position: absolute;
             margin-top: calc(100vh - 140px);
             margin-left: calc(50% - 60px);
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    #header {
+        &.park-menu {
+            .menu {
+                .btn-open {
+                    svg {
+                        &.menu-black {
+                            display: flex;
+                        }
+                        &.menu-white {
+                            display: none;
+                        }
+                    }
+                }
+                h1 {
+                    color: var(--main);
+                }
+            }
         }
     }
 }
