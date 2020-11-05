@@ -830,6 +830,137 @@ body > main {
     max-width: 500px;
   }
 }
+#error {
+  width: 100%;
+  height: 845px;
+  margin-top: -55px;
+  position: relative;
+  background-color: rgba(64, 55, 78, 0.3);
+}
+#error h1, #error h2, #error img, #error div {
+  position: absolute;
+}
+#error h1, #error h2 {
+  font-weight: 700;
+  color: var(--main);
+  margin: 0;
+}
+#error h1 {
+  font-size: 100px;
+  transform: rotate(315deg);
+  top: calc(var(--space-mobile) * 4);
+}
+#error h2 {
+  font-size: 25px;
+  top: 170px;
+  left: 50vw;
+}
+#error img {
+  width: 100%;
+  top: 220px;
+}
+#error div {
+  width: 100%;
+  height: 380px;
+  flex-direction: column;
+  padding: var(--space-mobile);
+  background-color: var(--gray);
+  top: 465px;
+}
+#error div p {
+  font-size: 20px;
+  color: var(--main);
+  margin: 0;
+}
+#error div p.title {
+  margin: var(--space-mobile) 0;
+  font-weight: 700;
+}
+#error div a {
+  text-decoration: none;
+}
+#error div a button {
+  width: 220px;
+  min-width: 200px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: var(--gray);
+  font-size: 30px;
+  font-weight: 700;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  width: 290px;
+  height: 50px;
+  background-color: rgba(64, 55, 78, 0.75);
+  font-size: 20px;
+  color: var(--gray);
+  border: var(--gray);
+  margin-top: var(--space-mobile);
+}
+#error div a button:hover {
+  background-color: var(--white);
+}
+#error div a button:hover {
+  color: var(--main-second);
+}
+
+@media (min-width: 768px) {
+  #error {
+    height: 475px;
+  }
+  #error h2 {
+    font-size: 37px;
+    top: 120px;
+    left: 28vw;
+  }
+  #error img {
+    width: 50%;
+    bottom: 0;
+    top: initial;
+  }
+  #error div {
+    width: 40%;
+    top: 190px;
+    right: var(--space-desktop);
+    background-color: transparent;
+  }
+  #error div p {
+    font-size: 16.3333333333px;
+  }
+}
+@media (min-width: 992px) {
+  #error {
+    height: 100vh;
+    margin-top: -135px;
+  }
+  #error h1 {
+    transform: rotate(45deg);
+    top: var(--space-desktop);
+    right: 0;
+  }
+  #error h2 {
+    top: 150px;
+    left: var(--space-desktop);
+    font-size: 50px;
+  }
+  #error div {
+    top: initial;
+    bottom: 0;
+  }
+  #error div p {
+    font-size: 22px;
+  }
+}
+@media (min-width: 1500px) {
+  #error h1 {
+    font-size: 180px;
+  }
+}
 #park {
   background-image: url("../images/photos/park-mobile.jpg");
   background-repeat: no-repeat;
