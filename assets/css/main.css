@@ -208,7 +208,8 @@ body > main {
     margin: auto 0;
   }
   #header .menu h1 {
-    width: 100vw;
+    width: 100%;
+    max-width: calc(100% - 130px);
     font-size: 30px;
     margin: 0;
     right: initial;
@@ -923,6 +924,38 @@ body > main {
     margin-right: 100px;
     height: 200px;
     width: 200px;
+  }
+}
+@media (min-width: 992px) {
+  #shops {
+    margin-top: -135px;
+  }
+  #shops .shops-title {
+    margin-top: 100px;
+  }
+  #shops .shops-only-desktop .shops-content div {
+    padding-left: var(--space-desktop);
+    margin-bottom: var(--space-desktop);
+  }
+  #shops .shops-only-desktop img {
+    margin-left: var(--space-desktop);
+    margin-bottom: var(--space-desktop);
+  }
+}
+@media (min-width: 1500px) {
+  #shops .shops-title {
+    max-width: 1000px;
+    margin-left: calc(50% - 500px);
+    margin-bottom: var(--space-desktop);
+    margin-top: 100px;
+  }
+  #shops .shops-title h1, #shops .shops-title h2 {
+    font-size: 50px;
+  }
+  #shops .shops-only-desktop img {
+    width: 300px;
+    height: 300px;
+    margin-left: -250px;
   }
 }
 #error {
