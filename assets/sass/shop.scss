@@ -1,0 +1,100 @@
+#shops {
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+    margin-top: -55px;
+    &.shops-jewels {
+        background-color: rgb(41,128,186,0.3);        
+    }
+    &.shops-food {
+        background-color: rgb(255,147,30,0.3);        
+    }
+    &.shops-shoes {
+        background-color: rgb(172,146,236,0.3);        
+    }
+    &.shops-tv {
+        background-color: rgb(96,209,247,0.3);        
+    }
+    &.shops-dress {
+        background-color: rgb(236,135,192,0.3);        
+    }
+    &.shops-game {
+        background-color: rgb(69,77,88,0.3);        
+    }
+    .shops-title {
+        margin-top: calc(55px + var(--space-mobile));
+       
+        padding-right: 10%;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        h1, h2 {
+            font-size: 25px;
+            font-weight: 700;
+        }
+        h1 {
+            margin: auto 0;
+        }
+        h2 {
+            text-align: center;
+        }
+        hr {
+            
+            height: 50px;
+            margin: auto 0;
+            width: 5px;
+            background-color: var(--main);
+            border-color: var(--main);
+        }
+    }
+    .shops-only-desktop {
+        flex-direction: column;
+        .shops-content {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            div {
+                flex-direction: column;
+                align-items: flex-start;
+                padding-left: var(--space-mobile);
+                margin-bottom: var(--space-mobile);
+            }
+            &.content-column {
+                
+                flex-direction: row;
+            }
+            p {
+                font-size: 20px;
+                margin: var(--space-mobile) 0;
+            }
+        }
+        img {
+            width: 150px;
+            height: 150px;
+            margin-left: var(--space-mobile);
+            margin-bottom: var(--space-mobile);
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    #shops {
+        .shops-title {
+            max-width: 500px;
+            margin-left: calc(50% - 250px);
+        }
+        .shops-only-desktop {
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: flex-end;
+            .shops-content {
+                margin-right: 80px;
+            }
+            img {
+                margin-left: 0;
+                margin-right: 100px;
+                height: 200px;
+                width: 200px;
+            }
+        }
+    }
+}
