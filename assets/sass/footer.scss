@@ -20,6 +20,9 @@
         }
         a {
             text-decoration: none;
+            &:hover {
+                color: var(--main-green);
+            }
         }
     }
     .footer-logo {
