@@ -860,6 +860,7 @@ body > main {
 #shops .shops-title h1, #shops .shops-title h2 {
   font-size: 25px;
   font-weight: 700;
+  color: Var(--main);
 }
 #shops .shops-title h1 {
   margin: auto 0;
@@ -894,6 +895,10 @@ body > main {
 #shops .shops-only-desktop .shops-content p {
   font-size: 20px;
   margin: var(--space-mobile) 0;
+  color: var(--main);
+}
+#shops .shops-only-desktop .shops-content p:hover {
+  color: var(--gray);
 }
 #shops .shops-only-desktop img {
   width: 150px;
@@ -1727,6 +1732,102 @@ body > main {
   }
   .schedules-main .confirm-schedules button {
     margin-top: calc(50% - 30px);
+  }
+}
+#construction {
+  width: 100%;
+  background-color: rgba(64, 55, 78, 0.3);
+  flex-direction: column;
+  margin-top: -55px;
+}
+#construction .only-image {
+  width: 100%;
+  margin-top: calc(55px + var(--space-mobile));
+}
+#construction .only-image img {
+  width: 350px;
+  margin: auto;
+}
+#construction .construction-content {
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: var(--space-mobile);
+}
+#construction .construction-content h1, #construction .construction-content h2, #construction .construction-content h3 {
+  color: var(--main);
+  font-size: 20px;
+  margin: 0;
+  margin-bottom: var(--space-mobile);
+}
+#construction .construction-content h1, #construction .construction-content h3 {
+  font-weight: 700;
+}
+#construction .construction-content h3 {
+  font-size: 30px;
+}
+#construction .construction-content img {
+  width: 350px;
+  margin: 0 auto;
+}
+#construction .construction-content a {
+  text-decoration: none;
+}
+#construction .construction-content a button {
+  width: 220px;
+  min-width: 200px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: var(--gray);
+  font-size: 30px;
+  font-weight: 700;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  background-color: rgba(64, 55, 78, 0.75);
+  color: var(--gray);
+  width: 180px;
+  height: 70;
+  font-size: 40px;
+  border: solid 1px var(--gray);
+}
+#construction .construction-content a button:hover {
+  background-color: var(--white);
+}
+#construction .construction-content a button:hover {
+  color: rgba(64, 55, 78, 0.75);
+  background-color: var(--gray);
+  border: solid 1px var(--main-second);
+}
+
+@media (min-width: 992px) {
+  #construction {
+    margin-top: -135px;
+    flex-direction: row;
+    height: 100vh;
+  }
+  #construction .only-image {
+    margin-top: 135px;
+  }
+  #construction .only-image img {
+    width: 500px;
+    padding: var(--space-desktop);
+  }
+  #construction .construction-content {
+    margin-top: 135px;
+  }
+  #construction .construction-content img {
+    width: 290px;
+  }
+}
+@media (min-width: 1500px) {
+  #construction .only-image img {
+    width: 650px;
   }
 }
 #terms,
