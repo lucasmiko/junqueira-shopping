@@ -267,32 +267,6 @@
         .movie {
             background-image: url('../images/photos/Grupo-de-máscara-3_2x.jpg');
         }
-        .services {
-            height: 100vh;
-            margin-bottom: var(--space-desktop);
-            .services-cards {
-                max-width: 1300px;
-                margin: 0 auto;
-                a {
-                    > div {
-                        width: 302px;
-                        height: 302px;
-                        img {
-                            width: 150px;
-                            height: 150px;
-                        }
-                        p {
-                            font-size: 20px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media (min-width: 992px) {
-    #home {
         .stores {
             > div {
                 &.odd {
@@ -346,6 +320,27 @@
                                 display: flex;
                                 animation-delay: .2s;
                             }
+                        }
+                    }
+                }
+            }
+        }
+        .services {
+            height: initial;
+            margin-bottom: var(--space-desktop);
+            .services-cards {
+                max-width: 1300px;
+                margin: 0 auto;
+                a {
+                    > div {
+                        width: 302px;
+                        height: 302px;
+                        img {
+                            width: 150px;
+                            height: 150px;
+                        }
+                        p {
+                            font-size: 20px;
                         }
                     }
                 }

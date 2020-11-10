@@ -149,41 +149,61 @@
     }
     .only-desktop {
         flex-direction: column;
-        img {
-            width: 370px;
+        .places {
+            width: 100%; 
+            padding: var(--space-mobile); 
+            justify-content: center; 
+            align-items: center;
+            flex-direction: row;
+            aside {
+                width: 15px;
+                height: 100%;
+                color: var(--main);
+                font-size: 38px;
+                font-weight: 700;
+                margin-right: var(--space-mobile);
+                line-height: 1.8em;
+            }
+            > div {
+                max-width: 300px;
+                flex-wrap: wrap;
+                input {
+                    cursor:pointer;
+                    padding:10px;
+                    margin: 5px;
+                }
+            }
+        }
+        .choose-seat {
+            flex-direction: column;
+            padding: var(--space-mobile);
+            margin: auto;
+            p {
+                margin: 0;
+                font-weight: 700;
+                color: var(--main);
+                font-size: 15px;
+                text-align: center; 
+            }
+            a {
+            text-decoration: none;
             margin: 0 auto;
-        }
-        > svg {
-            width: 359px;
-            max-width: 400px;
-            height: 182px;
-            margin: 0 auto;
-        }
-        p {
-            margin: 0;
-            color: var(--main);
-            font-size: 15px;
-            text-align: center; 
-        }
-        a {
-        text-decoration: none;
-        margin: 0 auto;
-        padding: var(--space-mobile) 0;
-            button {
-                @include button;
-                font-size: 20px;
-                height: 50px;
-                background-color: rgb(64,55,78,0.75);
-                color: var(--gray);
-                &:hover {
-                    color: rgb(64,55,78,0.75);
-                    background-color: var(--gray);
+            padding: var(--space-mobile) 0;
+                button {
+                    @include button;
+                    font-size: 20px;
+                    height: 50px;
+                    background-color: rgb(64,55,78,0.75);
+                    color: var(--gray);
+                    &:hover {
+                        color: rgb(64,55,78,0.75);
+                        background-color: var(--gray);
+                    }
                 }
             }
         }
     }
 }
-
 
 @media (min-width: 375px) {
     #ticket {
@@ -298,6 +318,11 @@
                 margin-left: calc(var(--space-desktop) * 2);
             }
         }
+        .only-desktop {
+            .choose-seat {
+                padding: var(--space-desktop);
+            }
+        }
     }
 }
 
@@ -311,6 +336,14 @@
                 }
                 .legend {
                     width: 25vw;
+                }
+            }
+        }
+        .only-desktop {
+
+            .choose-seat {
+                p {
+                    font-size: 50px;
                 }
             }
         }

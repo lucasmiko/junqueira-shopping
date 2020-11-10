@@ -589,27 +589,6 @@ body > main {
   #home .movie {
     background-image: url("../images/photos/Grupo-de-máscara-3_2x.jpg");
   }
-  #home .services {
-    height: 100vh;
-    margin-bottom: var(--space-desktop);
-  }
-  #home .services .services-cards {
-    max-width: 1300px;
-    margin: 0 auto;
-  }
-  #home .services .services-cards a > div {
-    width: 302px;
-    height: 302px;
-  }
-  #home .services .services-cards a > div img {
-    width: 150px;
-    height: 150px;
-  }
-  #home .services .services-cards a > div p {
-    font-size: 20px;
-  }
-}
-@media (min-width: 992px) {
   #home .stores > div.odd {
     display: flex;
   }
@@ -654,6 +633,25 @@ body > main {
   #home .stores > div.shoes:hover img.hover, #home .stores > div.shoes:focus img.hover {
     display: flex;
     animation-delay: 0.2s;
+  }
+  #home .services {
+    height: initial;
+    margin-bottom: var(--space-desktop);
+  }
+  #home .services .services-cards {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  #home .services .services-cards a > div {
+    width: 302px;
+    height: 302px;
+  }
+  #home .services .services-cards a > div img {
+    width: 150px;
+    height: 150px;
+  }
+  #home .services .services-cards a > div p {
+    font-size: 20px;
   }
 }
 @media (min-width: 1200px) {
@@ -1373,28 +1371,49 @@ body > main {
 .reserv-ticket .only-desktop {
   flex-direction: column;
 }
-.reserv-ticket .only-desktop img {
-  width: 370px;
-  margin: 0 auto;
+.reserv-ticket .only-desktop .places {
+  width: 100%;
+  padding: var(--space-mobile);
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
-.reserv-ticket .only-desktop > svg {
-  width: 359px;
-  max-width: 400px;
-  height: 182px;
-  margin: 0 auto;
+.reserv-ticket .only-desktop .places aside {
+  width: 15px;
+  height: 100%;
+  color: var(--main);
+  font-size: 38px;
+  font-weight: 700;
+  margin-right: var(--space-mobile);
+  line-height: 1.8em;
 }
-.reserv-ticket .only-desktop p {
+.reserv-ticket .only-desktop .places > div {
+  max-width: 300px;
+  flex-wrap: wrap;
+}
+.reserv-ticket .only-desktop .places > div input {
+  cursor: pointer;
+  padding: 10px;
+  margin: 5px;
+}
+.reserv-ticket .only-desktop .choose-seat {
+  flex-direction: column;
+  padding: var(--space-mobile);
+  margin: auto;
+}
+.reserv-ticket .only-desktop .choose-seat p {
   margin: 0;
+  font-weight: 700;
   color: var(--main);
   font-size: 15px;
   text-align: center;
 }
-.reserv-ticket .only-desktop a {
+.reserv-ticket .only-desktop .choose-seat a {
   text-decoration: none;
   margin: 0 auto;
   padding: var(--space-mobile) 0;
 }
-.reserv-ticket .only-desktop a button {
+.reserv-ticket .only-desktop .choose-seat a button {
   width: 220px;
   min-width: 200px;
   height: 80px;
@@ -1414,10 +1433,10 @@ body > main {
   background-color: rgba(64, 55, 78, 0.75);
   color: var(--gray);
 }
-.reserv-ticket .only-desktop a button:hover {
+.reserv-ticket .only-desktop .choose-seat a button:hover {
   background-color: var(--white);
 }
-.reserv-ticket .only-desktop a button:hover {
+.reserv-ticket .only-desktop .choose-seat a button:hover {
   color: rgba(64, 55, 78, 0.75);
   background-color: var(--gray);
 }
@@ -1517,6 +1536,9 @@ body > main {
   .reserv-ticket .movie-hour form + form {
     margin-left: calc(var(--space-desktop) * 2);
   }
+  .reserv-ticket .only-desktop .choose-seat {
+    padding: var(--space-desktop);
+  }
 }
 @media (min-width: 1200px) {
   .reserv-ticket .movie-seat .only-desktop h4 {
@@ -1525,6 +1547,9 @@ body > main {
   }
   .reserv-ticket .movie-seat .only-desktop .legend {
     width: 25vw;
+  }
+  .reserv-ticket .only-desktop .choose-seat p {
+    font-size: 50px;
   }
 }
 .full-banner-schedules {
