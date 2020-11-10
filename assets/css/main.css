@@ -44,24 +44,28 @@ body > main {
   src: local("Montserrat Regular"), url("../fonts/Montserrat-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
 }
 @font-face {
   font-family: "Montserrat";
   src: local("Montserrat Medium"), url("../fonts/Montserrat-Medium.ttf") format("truetype");
   font-style: normal;
   font-weight: 500;
+  font-display: swap;
 }
 @font-face {
   font-family: "Montserrat";
   src: local("Montserrat SemiBold"), url("../fonts/Montserrat-SemiBold.ttf") format("truetype");
   font-style: normal;
   font-weight: 600;
+  font-display: swap;
 }
 @font-face {
   font-family: "Montserrat";
   src: local("Montserrat Bold"), url("../fonts/Montserrat-Bold.ttf") format("truetype");
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
 }
 @keyframes menu {
   from {
@@ -1734,6 +1738,35 @@ body > main {
     margin-top: calc(50% - 30px);
   }
 }
+#map {
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#map .full-banner-map-shopping {
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  padding: var(--space-mobile);
+}
+#map .full-banner-map-shopping img {
+  width: 375px;
+}
+#map .full-banner-map-shopping h1, #map .full-banner-map-shopping small {
+  color: var(--main);
+}
+#map .full-banner-map-shopping h1 {
+  font-weight: 700;
+  font-size: 35px;
+}
+#map .full-banner-map-shopping small {
+  font-size: 20xp;
+}
+
 #construction {
   width: 100%;
   background-color: rgba(64, 55, 78, 0.3);

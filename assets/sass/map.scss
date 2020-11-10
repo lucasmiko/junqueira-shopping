@@ -1,0 +1,28 @@
+#map {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .full-banner-map-shopping {
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: start;
+        padding: var(--space-mobile);
+        img {
+            width: 375px;
+        }
+        h1, small {
+            color: var(--main);
+        }
+        h1 {
+            font-weight: 700;
+            font-size: 35px;
+        }
+        small {
+            font-size: 20xp;
+        }
+    }
+}

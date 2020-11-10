@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35" height="40" viewBox="0 0 35 40">
+  <g id="seat" transform="translate(-32.979)">
+    <g id="Grupo_73" data-name="Grupo 73" transform="translate(32.979)">
+      <g id="Grupo_72" data-name="Grupo 72">
+        <path id="Caminho_164" data-name="Caminho 164" d="M67.979,13.279H63.594V6.738A6.76,6.76,0,0,0,56.827,0h-12.7a6.76,6.76,0,0,0-6.767,6.738v6.541H32.979v6.858h2.192v12.64h5.063v4.879h-1.77V40h5.894V37.656h-1.77V32.777H58.37v4.879H56.6V40h5.894V37.656h-1.77V32.777h5.063V20.137h2.192V13.279h0ZM39.718,6.738a4.409,4.409,0,0,1,4.413-4.394h12.7A4.409,4.409,0,0,1,61.24,6.738v6.541H58.37V19.6H42.588v-6.32h-2.87V6.738Zm18.668,15.2v3.073H42.572V21.943Zm-23.053-6.32h4.9v2.171h-4.9Zm2.192,14.811v-10.3h2.693V27.36H60.74V20.137h2.693v10.3H37.525Zm28.1-12.64h-4.9V15.623h4.9Z" transform="translate(-32.979)" fill="#08fc18"/>
+      </g>
+    </g>
+    <g id="Grupo_75" data-name="Grupo 75" transform="translate(51.643 9.323)">
+      <g id="Grupo_74" data-name="Grupo 74">
+        <rect id="Retângulo_75" data-name="Retângulo 75" width="2.354" height="2.344" fill="#08fc18"/>
+      </g>
+    </g>
+    <g id="Grupo_77" data-name="Grupo 77" transform="translate(46.961 9.323)">
+      <g id="Grupo_76" data-name="Grupo 76">
+        <rect id="Retângulo_76" data-name="Retângulo 76" width="2.354" height="2.344" fill="#08fc18"/>
+      </g>
+    </g>
+  </g>
+</svg>
