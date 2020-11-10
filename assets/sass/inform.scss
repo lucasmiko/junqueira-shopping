@@ -5,6 +5,8 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    background-color: var(--gray);
+    margin-top: -55px;
     .inform-text {
         flex-direction: column;
         align-items: flex-start;
@@ -40,6 +42,14 @@
         }
     }
 }
+
+
+@media (min-width: 992px) {
+    #inform {
+        margin-top: -135px;
+    }
+}
+
 
 @media (min-width: 1200px) {
     #inform {
