@@ -349,3 +349,18 @@
         }
     }
 }
+
+@media (min-width: 1680px) {
+    #ticket {
+        h1 {
+            font-size: 100px;
+            top: 20vh;
+        }
+        p {
+            font-size: 60px;
+        }
+        img {
+            width: 1200px;
+        }
+    }
+}
