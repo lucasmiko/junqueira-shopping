@@ -2122,6 +2122,55 @@ body > main {
     width: 35vw;
   }
 }
+#cash {
+  background-image: url("../images/photos/cash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: -48em;
+  width: 100%;
+  height: 100vh;
+  margin-top: -55px;
+  position: relative;
+}
+#cash h1 {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0;
+  padding: var(--space-mobile);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: var(--main);
+}
+#cash img {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  #cash {
+    background-position-x: -35em;
+  }
+}
+@media (min-width: 992px) {
+  #cash {
+    margin-top: -135px;
+    background-position-x: -15em;
+  }
+  #cash h1 {
+    width: 50%;
+    font-size: 50px;
+  }
+}
+@media (min-width: 1500px) {
+  #cash {
+    background-position-x: initial;
+  }
+}
+@media (min-width: 1680px) {
+  #cash h1 {
+    font-size: 70px;
+  }
+}
 #construction {
   width: 100%;
   background-color: rgba(64, 55, 78, 0.3);
