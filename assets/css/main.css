@@ -1254,9 +1254,11 @@ body > main {
   width: 100%;
   background-color: var(--gray);
   padding-bottom: var(--space-mobile);
+  flex-direction: column;
 }
 .reserv-ticket .movie-hour form {
   flex-direction: column;
+  margin-bottom: var(--space-desktop);
 }
 .reserv-ticket .movie-hour form h3 {
   font-size: 30px;
@@ -1299,7 +1301,7 @@ body > main {
   min-width: 100px;
   height: 40px;
   margin: 0 10px;
-  font-size: 20px;
+  font-size: 18px;
 }
 .reserv-ticket .movie-hour form .options label span:hover {
   background-color: var(--white);
@@ -1508,6 +1510,12 @@ body > main {
     width: initial;
     height: 350px;
     margin-right: var(--space-mobile);
+  }
+  .reserv-ticket .movie-hour {
+    flex-direction: row;
+  }
+  .reserv-ticket .movie-hour form + form {
+    margin-left: calc(var(--space-desktop) * 2);
   }
 }
 @media (min-width: 1200px) {
