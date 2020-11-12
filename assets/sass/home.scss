@@ -28,21 +28,28 @@
                 border: none;
                 width: 225px;
                 padding: var(--space-mobile) 0;
-                cursor: pointer;
+                font-size: 15px;
+                font-weight: 700;
+                color: var(--white);
                 &::-webkit-input-placeholder {
-                    font-size: 17px;
+                    font-size: 15px;
+                    font-weight: 400;
                     color: var(--main);
                 }
                 &:focus {
-                    background: transparent;
-                    border: transparent;
+                    background: rgb(69, 77, 88, 0.5);
+                    border: none;
+                    padding: var(--space-mobile);
+                    padding-right: 0; 
                 }
-            }
-            input + img {
-                height: 30px;
-                width: 20px;
-                margin-left: var(--space-mobile);
-                margin-right: 0;
+                &.voice {
+                    height: 30px;
+                    width: 20px;
+                    padding: 0;
+                    margin-left: var(--space-mobile);
+                    margin-right: 0;
+                    cursor: pointer;
+                }
             }
         }
     }
@@ -55,7 +62,7 @@
             position: relative;
             flex-direction: row;
             cursor: pointer;
-            a {
+            p {
                 width: 100%;
                 text-decoration: none;
                 position: absolute;
@@ -83,7 +90,7 @@
                 &:focus {
                     background-color: rgb(248, 207, 38, 0.3);
                     transition: all 0.4s ease-in-out;
-                    a {
+                    p {
                         color: rgb(248, 207, 38);
                     }
                     img {
@@ -100,7 +107,7 @@
                 &:focus {
                     background-color: rgb(236, 135, 192, 0.3);
                     transition: all 0.4s ease-in-out;
-                    a {
+                    p {
                         color: rgb(236, 135, 192);
                     }
                     img {
@@ -117,7 +124,7 @@
                 &:focus {
                     background-color: rgb(69, 77, 88, 0.3);
                     transition: all 0.4s ease-in-out;
-                    a {
+                    p {
                         color: rgb(69, 77, 88);
                     }
                     img {
@@ -257,10 +264,10 @@
                     &::-webkit-input-placeholder {
                         font-size: 30px;
                     }
-                }
-                input + img {
-                    height: 70px;
-                    width: 40px;
+                    &.voice {
+                        height: 70px;
+                        width: 40px;
+                    }
                 }
             }
         }
@@ -277,7 +284,7 @@
                     &:focus {
                         background-color: rgb(7, 72,94, 0.3);
                         transition: all 0.4s ease-in-out;
-                        a {
+                        p {
                             color: rgb(7, 72, 94);
                         }
                         img {
@@ -294,7 +301,7 @@
                     &:focus {
                         background-color: rgb(41, 128,186, 0.3);
                         transition: all 0.4s ease-in-out;
-                        a {
+                        p {
                             color: rgb(41, 128, 186);
                         }
                         img {
@@ -311,7 +318,7 @@
                     &:focus {
                         background-color: rgb(172, 146,236, 0.3);
                         transition: all 0.4s ease-in-out;
-                        a {
+                        p {
                             color: rgb(172, 146, 236);
                         }
                         img {
@@ -359,7 +366,7 @@
         .stores {
             > div {
                 width: calc(100% / 6);
-                a {
+                p {
                     bottom: initial;
                     top: 17%;
                     font-size: 20px;
@@ -418,6 +425,19 @@
             > div {
                 img {
                     width: 240px;
+                    margin: 5px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1680px) {
+    #home {
+        .stores {
+            > div {
+                img {
+                    margin: 50px;
                 }
             }
         }

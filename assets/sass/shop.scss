@@ -90,6 +90,7 @@
             flex-direction: row-reverse;
             justify-content: center;
             align-items: flex-end;
+            margin-bottom: var(--space-desktop);
             .shops-content {
                 margin-right: 80px;
             }
@@ -118,7 +119,6 @@
             }
             img {
                 margin-left: var(--space-desktop);
-                margin-bottom: var(--space-desktop);
             }
         }
     }

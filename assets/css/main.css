@@ -349,21 +349,28 @@ body > main {
   border: none;
   width: 225px;
   padding: var(--space-mobile) 0;
-  cursor: pointer;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--white);
 }
 #home .full-banner-home .help input::-webkit-input-placeholder {
-  font-size: 17px;
+  font-size: 15px;
+  font-weight: 400;
   color: var(--main);
 }
 #home .full-banner-home .help input:focus {
-  background: transparent;
-  border: transparent;
+  background: rgba(69, 77, 88, 0.5);
+  border: none;
+  padding: var(--space-mobile);
+  padding-right: 0;
 }
-#home .full-banner-home .help input + img {
+#home .full-banner-home .help input.voice {
   height: 30px;
   width: 20px;
+  padding: 0;
   margin-left: var(--space-mobile);
   margin-right: 0;
+  cursor: pointer;
 }
 #home .stores {
   width: 100%;
@@ -376,7 +383,7 @@ body > main {
   flex-direction: row;
   cursor: pointer;
 }
-#home .stores > div a {
+#home .stores > div p {
   width: 100%;
   text-decoration: none;
   position: absolute;
@@ -403,7 +410,7 @@ body > main {
   background-color: rgba(248, 207, 38, 0.3);
   transition: all 0.4s ease-in-out;
 }
-#home .stores > div.food:hover a, #home .stores > div.food:focus a {
+#home .stores > div.food:hover p, #home .stores > div.food:focus p {
   color: #f8cf26;
 }
 #home .stores > div.food:hover img, #home .stores > div.food:focus img {
@@ -417,7 +424,7 @@ body > main {
   background-color: rgba(236, 135, 192, 0.3);
   transition: all 0.4s ease-in-out;
 }
-#home .stores > div.dress:hover a, #home .stores > div.dress:focus a {
+#home .stores > div.dress:hover p, #home .stores > div.dress:focus p {
   color: #ec87c0;
 }
 #home .stores > div.dress:hover img, #home .stores > div.dress:focus img {
@@ -431,7 +438,7 @@ body > main {
   background-color: rgba(69, 77, 88, 0.3);
   transition: all 0.4s ease-in-out;
 }
-#home .stores > div.game:hover a, #home .stores > div.game:focus a {
+#home .stores > div.game:hover p, #home .stores > div.game:focus p {
   color: #454d58;
 }
 #home .stores > div.game:hover img, #home .stores > div.game:focus img {
@@ -582,7 +589,7 @@ body > main {
   #home .full-banner-home .help input::-webkit-input-placeholder {
     font-size: 30px;
   }
-  #home .full-banner-home .help input + img {
+  #home .full-banner-home .help input.voice {
     height: 70px;
     width: 40px;
   }
@@ -596,7 +603,7 @@ body > main {
     background-color: rgba(7, 72, 94, 0.3);
     transition: all 0.4s ease-in-out;
   }
-  #home .stores > div.tv:hover a, #home .stores > div.tv:focus a {
+  #home .stores > div.tv:hover p, #home .stores > div.tv:focus p {
     color: #07485e;
   }
   #home .stores > div.tv:hover img, #home .stores > div.tv:focus img {
@@ -610,7 +617,7 @@ body > main {
     background-color: rgba(41, 128, 186, 0.3);
     transition: all 0.4s ease-in-out;
   }
-  #home .stores > div.jewels:hover a, #home .stores > div.jewels:focus a {
+  #home .stores > div.jewels:hover p, #home .stores > div.jewels:focus p {
     color: #2980ba;
   }
   #home .stores > div.jewels:hover img, #home .stores > div.jewels:focus img {
@@ -624,7 +631,7 @@ body > main {
     background-color: rgba(172, 146, 236, 0.3);
     transition: all 0.4s ease-in-out;
   }
-  #home .stores > div.shoes:hover a, #home .stores > div.shoes:focus a {
+  #home .stores > div.shoes:hover p, #home .stores > div.shoes:focus p {
     color: #ac92ec;
   }
   #home .stores > div.shoes:hover img, #home .stores > div.shoes:focus img {
@@ -661,7 +668,7 @@ body > main {
   #home .stores > div {
     width: calc(100% / 6);
   }
-  #home .stores > div a {
+  #home .stores > div p {
     bottom: initial;
     top: 17%;
     font-size: 20px;
@@ -729,6 +736,12 @@ body > main {
 @media (min-width: 1500px) {
   #home .stores > div img {
     width: 240px;
+    margin: 5px;
+  }
+}
+@media (min-width: 1680px) {
+  #home .stores > div img {
+    margin: 50px;
   }
 }
 #contact {
@@ -919,6 +932,7 @@ body > main {
     flex-direction: row-reverse;
     justify-content: center;
     align-items: flex-end;
+    margin-bottom: var(--space-desktop);
   }
   #shops .shops-only-desktop .shops-content {
     margin-right: 80px;
@@ -943,7 +957,6 @@ body > main {
   }
   #shops .shops-only-desktop img {
     margin-left: var(--space-desktop);
-    margin-bottom: var(--space-desktop);
   }
 }
 @media (min-width: 1500px) {
